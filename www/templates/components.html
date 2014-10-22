@@ -1,0 +1,19 @@
+<ion-view title="Components">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+
+    <ion-nav-buttons side="right">
+        <button class="button button-icon" ng-click="newTask()">
+            <i class="icon ion-compose"></i>
+        </button>
+    </ion-nav-buttons>
+
+    <ion-content class="has-header">
+        <ion-item ng-repeat="component in components">
+            Description:<input type='text' ng-model="component.description">{{component.description}}
+        </ion-item>
+    </ion-content>
+</ion-view>
+
+
